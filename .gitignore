@@ -1,0 +1,25 @@
+@"
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+
+# 大文件/数据/模型
+*.mp4
+*.avi
+*.zip
+*.pkl
+*.joblib
+*.parquet
+*.csv
+
+# 资料文件夹
+黑马程序员_机器学习资料/
+
+runtime/
+outputs/
+logs/
+"@ | Out-File -Encoding utf8 .gitignore
