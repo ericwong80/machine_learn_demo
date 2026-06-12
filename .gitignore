@@ -22,4 +22,5 @@ __pycache__/
 runtime/
 outputs/
 logs/
-"@ | Out-File -Encoding utf8 .gitignore
+output/
+
