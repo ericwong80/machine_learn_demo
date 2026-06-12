@@ -1,0 +1,30 @@
+@"
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.idea/
+.vscode/
+
+# 大文件/数据/模型
+*.mp4
+*.avi
+*.zip
+*.pkl
+*.joblib
+*.parquet
+*.csv
+
+# 资料文件夹
+黑马程序员_机器学习资料/
+
+runtime/
+outputs/
+logs/
+"@ | Out-File -Encoding utf8 .gitignore
+
+# 忽略输出目录
+output/
+# 或者如果你只想忽略 output 下的所有内容，但保留空的 output 文件夹（不太常见）
+# /output/*
