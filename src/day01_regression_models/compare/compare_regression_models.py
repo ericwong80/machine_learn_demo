@@ -9,14 +9,9 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 import xgboost as xgb
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-
-# 导入公共模块
-import sys
 import os
-
 from utils.dataset import prepare_data
-from utils.metrics import calculate_metrics, compare_models
+from utils.metrics import calculate_metrics
 from utils.plotting import plot_model_comparison, set_chinese_plot_style
 from utils.output import create_output_dir, save_figure, save_dataframe
 
@@ -25,6 +20,8 @@ set_chinese_plot_style()
 
 # 创建输出目录
 output_dir = create_output_dir()
+
+print(output_dir)
 
 # ===== 1. 准备数据 =====
 print("=== 准备数据 ===")
